@@ -59,6 +59,7 @@ int main(){
     float pibPerCapita2 = pib2 / populacao2;
 
     // Apresentando as cartas
+    
     // Primeira carta
     printf("---------- Dados da carta 1 ----------\n");
     printf("Estado: %c\n", estado);
