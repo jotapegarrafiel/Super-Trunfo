@@ -14,7 +14,8 @@ int main(){
     // Registrar as cartas
     char estado, estado2, codigo[4], codigo2[4], cidade2[40], cidade[40];
     int pontosTuristicos, pontosTuristicos2;
-    float pib, pib2, area, area2, populacao, populacao2;
+    float pib, pib2, area, area2;
+    unsigned long int populacao, populacao2; // Alterado para unsigned long int para aceitar números grandes
 
     // Primeira carta
     printf("Escolha uma letra de 'A' a 'H'\n");
@@ -64,8 +65,8 @@ int main(){
 
     // Calculando o super poder
     float superPoder, superPoder2;
-    superPoder = populacao + area + pib + pontosTuristicos + densidadeDemografica + pibPerCapita + inversoDensidade;
-    superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + densidadeDemografica2 + pibPerCapita2 + inversoDensidade2;
+    superPoder = (float)populacao + area + pib + pontosTuristicos + densidadeDemografica + pibPerCapita + inversoDensidade;
+    superPoder2 = (float)populacao2 + area2 + pib2 + pontosTuristicos2 + densidadeDemografica2 + pibPerCapita2 + inversoDensidade2;
 
     // Apresentando as cartas
     
@@ -74,7 +75,7 @@ int main(){
     printf("Estado: %c\n", estado);
     printf("Código: %s\n", codigo);
     printf("Cidade: %s\n", cidade);
-    printf("População: %.2f habitantes\n", populacao);
+    printf("População: %lu habitantes\n", populacao);
     printf("Área total: %.3f km²\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Pontos turísticos: %d\n", pontosTuristicos);
@@ -87,7 +88,7 @@ int main(){
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Cidade: %s\n", cidade2);
-    printf("População: %.2f habitantes\n", populacao2);
+    printf("População: %lu habitantes\n", populacao2);
     printf("Área total: %.3f km²\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turísticos: %d\n", pontosTuristicos2);
