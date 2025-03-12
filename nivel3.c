@@ -95,6 +95,9 @@ int main(){
     printf("Densidade demográfica: %.2f hab/km²\n", densidadeDemografica2);
     printf("PIB per capita: %.2f\n", pibPerCapita2);
     printf("Super poder: %.2f\n", superPoder2);
+
+    printf("--------------------\n");
+    printf("Obrigado por jogar!\n");
     
     return 0;
 }
